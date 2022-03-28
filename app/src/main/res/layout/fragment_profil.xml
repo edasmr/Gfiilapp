@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan3"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
+    tools:context=".presentation.home.HomeFragment">
+ <ScrollView
+
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROFİL"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hesap Detayları"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="67dp"
+            android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Kullanıcı Adı:"
+        android:textSize="17dp"
+        android:textColor="@color/orange"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#2D000000"
+        tools:text="edasmr"
+        android:id="@+id/kuladi"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_button"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="E-Posta Adresi:"
+        android:textColor="@color/orange"
+        android:textSize="17dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:id="@+id/eposta"
+        tools:text="almina.eda.06@gmail.com"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#2D000000"
+        android:background="@drawable/round_button"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Telefon Numarası:"
+        android:textSize="17dp"
+        android:textColor="@color/orange"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        tools:text="05334070316"
+        android:id="@+id/telno"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_button"
+        android:textSize="18dp"
+        android:backgroundTint="#2D000000"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Cinsiyet:"
+        android:textSize="17dp"
+        android:textColor="@color/orange"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        tools:text="Kadın"
+        android:id="@+id/cinsiyet"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_button"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:backgroundTint="#2D000000"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Bakiye:"
+        android:textSize="17dp"
+        android:textColor="@color/orange"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        tools:text="0"
+        android:layout_marginTop="0dp"
+        android:id="@+id/bakiye"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_button"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:backgroundTint="#2D000000"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="112dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ödeme Talebi"
+        android:id="@+id/ödemeTalebi"
+        android:textColor="@color/orange"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Güncelle"
+         android:id="@+id/guncelle"
+         android:textColor="@color/orange"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="5dp"
+         />
+
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

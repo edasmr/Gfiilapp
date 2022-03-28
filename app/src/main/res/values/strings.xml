@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Gfiilapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_app">Uygulama Hakkında</string>
+    <string name="result_tckn_valid">TC Kimlik Numarası Geçerli</string>
+    <string name="result_content_missing">Lütfen gerekli alanları doldurunuz</string>
+    <string name="result_tckn_invalid">TC Kimlik Numarası Geçersiz</string>
+    <string name="result_content_invalid">Doldurduğunuz alanlar geçersiz bilgi içeriyor</string>
+    <string name="result_connection_error">İnternet bağlantınız kesilmiş ya da TCKN Servisi devre dışı kalmış olabilir.</string>
+    <string name="result_unknown_error">Beklenmedik bir hata oluştu. Hata kodu:</string>
+
+
+    <string name="tckn_title">TC Kimlik No (11 Karakter)</string>
+
+    <string name="name">Adınız</string>
+
+    <string name="surname">Soyadınız</string>
+
+    <string name="year">Doğum yılınız ör.1993</string>
+
+    <string name="sorgu">Sorgula</string>
+
+
+    <string name="sozlesme"><![CDATA[  <p>REKLAM PANELİ &nbsp;S&Ouml;ZLEŞMESİ</p>
+
+<p>1&nbsp; &nbsp; - İş bu s&ouml;zleşme ; GENİUS TEKNOLOJİ AZILIM DIŞ TİCARET LİMİTED ŞİRKETİ tarafından, &uuml;yelik koşullarını belirlemek, bu şartları kabul eden ve &uuml;ye olarak kabul edilebilme yeterliliğine sahip olan kişilerin &uuml;yeliklerini ger&ccedil;ekleştirmek ve s&ouml;zleşmenin tarafı olan kişilerin hak ve y&uuml;k&uuml;ml&uuml;l&uuml;klerini belirlemek &uuml;zere hazırlanmıştır.</p>
+
+<p><br />
+2&nbsp; - Reklam paneli kiralama faaliyetiyle ilgili olarak ger&ccedil;ekleştirilen &uuml;yelik, iş bu s&ouml;zleşmeye dayanmakta olup, s&ouml;zleşmenin okunmuş ve anlaşılmış olması ve tam bir mutabakatla kabul edilmesi durumu esastır. &Uuml;yelerin sonradan, s&ouml;zleşme koşullarını okumadığından bahisle s&ouml;zleşme koşullarına aykırı iddialar g&uuml;ndeme getirilebilmesinin olanaklı olmadığı taraflarca kabul ve beyan edilmiştir.</p>
+
+<p><br />
+3 - Reklam paneli s&ouml;zleşmesi yapmak i&ccedil;in iş bu s&ouml;zleşmeyi okuyarak , koşulları kabul edenler, GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ ile aralarında iş bu s&ouml;zleşmenin ge&ccedil;erli olacağını, &uuml;yelik &ccedil;er&ccedil;evesinde oluşan hak ve y&uuml;k&uuml;ml&uuml;l&uuml;klerin bu s&ouml;zleşmeye bağlı olarak oluşacağını kabul ve beyan etmişlerdir.</p>
+
+<p>4 - Taraflar, iletişim adresi olarak &uuml;yelik esnasında sisteme bildirdikleri ikamet//tebligat adresini , mail adresini ve telefon numaralarını aktif olarak kullandıklarını , yapılacak hukuki bildirimlerin bildirilen adreslere yapılmasını kabul ettiklerini, herhangi bir değişikliğin en ge&ccedil; 3 (&Uuml;&ccedil;) g&uuml;n i&ccedil;inde sisteme kaydını yapmayı, aksi bir durumda ortaya &ccedil;ıkabilecek cezai ve hukuki sorumluluğun muhatabının kendileri olacağını kabul ve beyan etmişlerdir.</p>
+
+<p><br />
+5 - İş bu s&ouml;zleşmenin temel konusunu, GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ&rsquo;nin, www.gfiilapp.com sitesi &uuml;zerinden ger&ccedil;ekleştireceği reklam paneli kiralaması durumu ile iş bu s&ouml;zleşmeyi kabul edip gerekli şartları yerine getirmek suretiyle &uuml;ye konumunu kazanan kişinin, bu panel &uuml;zerinden ve yine www.gfiilapp.com sitesinde i&ccedil;eriği belirlenen ve &uuml;yelikle birlikte satın almış olduğu paketlerde belirlenen faaliyetleri ger&ccedil;ekleştirerek kazan&ccedil; oluşturması//elde etmesi durumu oluşturmaktadır. &nbsp;</p>
+
+<p><br />
+6 - www.gfiilapp.com sitesi &uuml;zerinden, GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ&rsquo;nden reklam paneli kiralayan &uuml;yenin, satın almış olduğu paket, 1 yıllık olup, her &uuml;ye bu &ccedil;er&ccedil;evede 1 (Bir) yıllık taahh&uuml;tte bulunmuş olduğunu kabul ve beyan etmiştir. Aynı s&uuml;re GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ&rsquo;nin s&ouml;zleşme ile oluşan y&uuml;k&uuml;ml&uuml;l&uuml;kleri a&ccedil;ısından de ge&ccedil;erli bulunmaktadır.</p>
+
+<p><br />
+7 - &Uuml;yelik s&uuml;resi olan 1 (Bir) yılın dolması &ouml;ncesinde, 15 (onbeş) g&uuml;n &ouml;nceden, sistemde ilan edilen koşullar &ccedil;er&ccedil;evesinde &uuml;yeliğin yenilenmesi m&uuml;mk&uuml;n olabilecektir. Yeni bir paket satın alınması ve paketin yenilenmesi gibi &uuml;yelik ilişkisinin devamı sonucunu doğuran işlemler durumunda da &uuml;yeliğin 1 yıl s&uuml;reyle uzadığı taraflarca kabul edilmiştir.</p>
+
+<p>8 - Kazan&ccedil; oranları ve bu hususa ilişkin koşullar, reklam paneli bağlantısıyla satın alınabilecek olan paketler ile belirlenecektir. Paketler ve i&ccedil;erikleri ise www.gfiilapp.com sitesi &uuml;zerinden ilan edilecektir. Kimse satın almadığı ve uygulama koşullarına dahil olmadığı bir paketin hak ve y&uuml;k&uuml;ml&uuml;l&uuml;klerine tabi olmayacak, sadece kendi satın aldığı paketlerin &ouml;ng&ouml;rd&uuml;ğ&uuml; hak ve y&uuml;k&uuml;ml&uuml;l&uuml;klere sahip olacaktır.</p>
+
+<p>9 - Reklam paneli kiralayan ve kazan&ccedil; elde etmek i&ccedil;in iş bu s&ouml;zleşme &ccedil;er&ccedil;evesinde paket satın alanların, s&ouml;z konusu kazancı elde edebilmesi i&ccedil;in yerine getirmesi gereken y&uuml;k&uuml;ml&uuml;l&uuml;kler ve faaliyet alanları, satın almış oldukları paketin i&ccedil;eriğinde ilan edilmiş ve &uuml;yeler de bu i&ccedil;eriği kabul etmiş bulunmaktadır. Bu bağlamda sonradan g&uuml;ndeme getirilen farklı iddiaların, www.gfiilapp.com sitesinde ilan edilen veriler karşısında hukuken bir değer ifade etmediği de taraflarca kabul ve beyan edilmiştir.&nbsp;</p>
+
+<p>10 - &Uuml;yenin satın almış olduğu paket &uuml;zerinden yapmış olduğu işlemler, paket i&ccedil;eriğinde belirlenen koşullar &ccedil;er&ccedil;evesinde g&uuml;nl&uuml;k ve aylık olarak, &uuml;yenin panelinde g&ouml;sterilecektir. B&ouml;ylece &uuml;yeler, yapmış olduğu faaliyetler neticesinde oluşan kazan&ccedil;larını g&uuml;nl&uuml;k olarak g&ouml;rebileceklerdir.</p>
+
+<p>11 - &Uuml;yeler ; kazanmış oldukları , panellerinde g&ouml;sterilen ve asgari 100.TL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ( Yalnızy&uuml;zTL) &nbsp;ve &uuml;st&uuml; kazancı, en ge&ccedil; her ayın son g&uuml;n&uuml;ne kadar talep edebilecek ve s&ouml;z konusu kazan&ccedil; miktarı, takip eden ayın ilk 5 (beş) işg&uuml;n&uuml; i&ccedil;inde, sisteme bildirilen hesaplara y&ouml;nelik olarak verilecek &ouml;deme talimatıyla &uuml;yelerin hesabına aktarılacaktır. &Ouml;demenin son g&uuml;n&uuml;n&uuml;n tatile rastlaması durumunda, &ouml;demeler tatili takip eden ilk mesai g&uuml;n&uuml; hesaplara aktarılmış olacaktır. Ay sonuna kadar &ouml;deme talebinde bulunulmayan hesaplarla ilgili olarak, bir sonraki ay i&ccedil;in ger&ccedil;ekleştirilecek &ouml;demelere kadar herhangi bir &ouml;deme yapılmayacaktır.</p>
+
+<p>12 - &Uuml;yelerin kazan&ccedil;larına y&ouml;nelik olara vuku bulan herhangi bir itirazı, en ge&ccedil; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7 &nbsp;(Yedi) işg&uuml;n&uuml; i&ccedil;inde &ccedil;&ouml;z&uuml;mlenecek ve itiraz konularına y&ouml;nelik yazılı bilgilendirme yapılacaktır. İtiraz durumunda &ouml;deme, itirazın sonu&ccedil;landırması ve mutabakatın sağlandığı beyanının alınması &uuml;zerine takip eden 3 (&uuml;&ccedil;) iş g&uuml;n&uuml; i&ccedil;inde yapılacaktır.</p>
+
+<p>13 - &Uuml;yeler, paket değişimi yapmak istediğinde, değişim talep ettiği andaki g&uuml;ncel şartlarını yerine getirmek koşuluyla istediği pakete ge&ccedil;iş yapabilecektir.</p>
+
+<p><br />
+14 - &Uuml;yelerin , hesaplarında toplanan kazan&ccedil;ları &uuml;zerindeki hakları yıl sonuna kadar korunacak olup, yıl sonuna kadar &ccedil;ekim talebinde bulunmayan ya da farklı bir kullanım talebini iletmeyen &uuml;yelerin kazan&ccedil;ları, sisteme bildirilen banka hesabına aktarılacaktır.&nbsp;</p>
+
+<p><br />
+14 - Yine &uuml;yelerin paket &uuml;cretleri de taahh&uuml;t s&uuml;resi olan 1 ( Bir ) yıl s&uuml;re ile GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ hesabında &ldquo;s&ouml;zleşme bedeli&rdquo; olarak tutulacak ve bu s&uuml;renin sonunda &nbsp;sisteme bildirilen banka hesabına havale olunacaktır.&nbsp;</p>
+
+<p>15 - M&uuml;şteri kazan&ccedil;larına ilişkin &ouml;demelerde ,GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ&rsquo;ne atfedilebilecek bir kusur nedeniyle bir s&ouml;zleşme d&ouml;nemi i&ccedil;inde &uuml;&ccedil; defa gecikme yaşanması ve talep edilmesi durumunda yasal faiziyle birlikte &ouml;deme yapılacaktır.&nbsp;</p>
+
+<p><br />
+16 - &Uuml;yenin, s&ouml;zleşmeden d&ouml;nme ya da fesih gibi s&ouml;zleşmeyi sona erdiren irade beyanlarını kullanma hakkı mevcuttur. Bu hak, s&ouml;zleşme s&uuml;resinden itibaren &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4 (d&ouml;rt) aylık s&uuml;renin ge&ccedil;mesi ile kullanılabilecektir. Ayrıca bu t&uuml;r irade beyanlarının g&uuml;ndeme gelmesi durumunda &uuml;ye, anapara ve kazancının %10&rsquo;u &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;( Y&uuml;zdeonu) oranında cezai şart &ouml;demesi yapmayı da kabul ve beyan etmiş bulunmaktadır.</p>
+
+<p>17 - &Uuml;yenin bir &uuml;st pakete ge&ccedil;iş hususunda paket değişimi yapma hakkı mevcut olup, gerekli şartları karşılamak koşuluyla bu hakkını kullanabilecektir.</p>
+
+<p>18 - Her &uuml;yenin sadece bir panel kiralama hakkı mevcut olup, ailesi ve yakın &ccedil;evresi i&ccedil;in yapılacak kiralamalarda referans davetiye kodu ile kiralama yapılacaktır.</p>
+
+<p><br />
+19 - Yine her &uuml;ye satın alma hakkı bulunduğu 1(bir) panel &uuml;zerinden farklı paketler satın alarak işletmesini yapabilecektir.</p>
+
+<p>20 - Sahte , başkasının adına a&ccedil;ılmış vb. hesaplar tespit edildiğinde bu t&uuml;r hesaplar GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ tarafından kapatılacak ve bu hesapları a&ccedil;anlar, ana para ve kazan&ccedil; &ouml;demesi dahil olmak &uuml;zere herhangi bir hak talep edemeyecek, haklarında su&ccedil; duyurusunda bulunulacağı gibi oluşacak hukuki masrafların da muhatabı olacaklardır.</p>
+
+<p><br />
+21 - &Uuml;yenin, paketin &ouml;ng&ouml;rd&uuml;ğ&uuml; g&uuml;nl&uuml;k g&ouml;revleri yerine getirmemesi, eksik yerine getirmesi gibi durumlarda, www.gfiilapp.com sisteminin kazan&ccedil; oranlarında eksiltme yapma hakkı bulunduğu, bu t&uuml;r durumlarla ilgili sorumluluğun muhatabının &uuml;ye olduğu ve bu hususa ilişkin olarak oluşan eksiltmelere y&ouml;nelik itirazlardan &uuml;ye tarafından feragat edilmiş olduğu kabul ve beyan edilmiştir.</p>
+
+<p><br />
+22 - &Uuml;yelerin referansıyla ger&ccedil;ekleşen kayıtlar a&ccedil;ısından, referans olunan &uuml;yenin satın almış olduğu paketin %10 (Y&uuml;zdeonu) oranında ve ilk kayıt ile sınırlı olmak &uuml;zere bir prim kazancı &nbsp;oluşacak ve bu kazan&ccedil;, referans olan &uuml;yenin hesabına tanımlanacaktır.&nbsp;</p>
+
+<p><br />
+23 - Yine &uuml;yelerin uygulamaya reklam sağlaması durumunda, yapılacak reklam s&ouml;zleşmesindeki bedelin %10&rsquo;u ( Y&uuml;zdeonu ) oranında ve ilk s&ouml;zleşmeyle sınırlı olmak &uuml;zere bir prim kazancı oluşacak ve bu kazan&ccedil;, reklam anlaşmasına aracılık eden &uuml;yenin hesabına tanımlanacaktır.</p>
+
+<p><br />
+24 - Her panelin bir &uuml;ye kişi tarafından işletilebileceği ve başka şahıslar kullanılarak sisteme giriş yapılamayacağı kabul ve beyan edilmiştir.</p>
+
+<p><br />
+25 - T&uuml;m &uuml;yelere, sistemde ortaya &ccedil;ıkabilecek sorunlara karşılık, 7 / 24 destek sağlanacaktır.</p>
+
+<p><br />
+26&nbsp;&nbsp; &nbsp;<br />
+&Uuml;yeler, ay i&ccedil;inde kazandığı kazan&ccedil;ları, banka hesaplarına aktarabileceği gibi sistem &uuml;zerindeki hesap bakiyelerine aktararak, daha fazla kazan&ccedil; elde &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;etme imkanına da sahip olabileceklerdir.</p>
+
+<p><br />
+27 - VIP &uuml;yelik paketi satın alınması durumunda ise diğer &uuml;yelik paketlerinden farklı olarak sınırsız kullanım tanımlanmasının m&uuml;mk&uuml;n olduğu kabul edilmiş bulunulmaktadır.</p>
+
+<p><br />
+29 - &Uuml;ye, satın almış olduğu paket &ccedil;er&ccedil;evesinde &uuml;stlenmiş olduğu edimleri ve taahh&uuml;tleri yerine getirmekle y&uuml;k&uuml;ml&uuml; olduğu gibi 3 ( &uuml;&ccedil;) ay s&uuml;re ile mazeretsiz bi&ccedil;imde bu durumu b&uuml;y&uuml;k &ouml;l&ccedil;&uuml;de devam ettirmesi durumunda, 16.maddede &ouml;ng&ouml;r&uuml;len koşullar &ccedil;er&ccedil;evesinde &uuml;yeliğine son verilebileceğini de kabul ve beyan etmiştir.</p>
+
+<p>30 - İş bu s&ouml;zleşmenin uygulanması noktasında yazılı delilin esas olduğu ve s&ouml;zleşme h&uuml;k&uuml;mlerinin uygulanması ile ilgili olarak tanık deliline başvurulabilmesinin m&uuml;mk&uuml;n olmadığı taraflarca kabul ve beyan edilmiştir.</p>
+
+<p>31 - İş bu s&ouml;zleşmenin yorumlanması ve uygulanması noktasında ortaya &ccedil;ıkabilecek t&uuml;m sorunların &ccedil;&ouml;z&uuml;m&uuml; ile ilgili olarak Ankara mahkemeleri ve icra dairelerinin yetkili olduğu hususu taraflarca kabul ve beyan edilmiştir.</p>
+
+<p><br />
+32 - İş bu s&ouml;zleşme, 32 maddeden ibaret olarak hazırlanmış ve &uuml;yelik kabul&uuml; esnasında ilgililerin kabul&uuml;ne sunularak, kabul eden &uuml;ye ile GENİUS TEKNOLOJİ DIŞ TİCARET LİMİTED ŞİRKETİ arasında &nbsp;kabul tarihi itibariyle bağlayıcı ve ge&ccedil;erli &nbsp;hale gelmiştir.</p>
+  ]]></string>
+
+
+</resources>

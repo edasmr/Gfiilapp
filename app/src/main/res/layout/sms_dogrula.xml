@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:src="@drawable/img"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:text="SMS DOĞRULAMA"
+        android:layout_margin="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:text="nolu telefon numaranıza SMS onay kodu gönderilmiştir."
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:text="Doğrulama Kodu :"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/smsDogrulama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:hint="SMS doğrulama kodunuzu girin"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:maxLength="11"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/onaylaButon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#457195"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="✓ Onayla" />
+
+        <Button
+            android:id="@+id/tekrarGonderButon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="Tekrar Gonder" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vazgecButon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#5A2323"
+        android:text=" x Vazgeç" />
+
+
+
+</LinearLayout>

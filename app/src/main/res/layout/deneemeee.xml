@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUpActivity"
+
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:weightSum="1">
+        <TextView android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="tckn_title">
+
+        </TextView>
+        <EditText android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TKNGirisEditText"
+            android:maxLength="11">
+
+        </EditText>
+        <TextView
+            android:id="@+id/TKNSonucTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TKNGirisEditText"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|center_horizontal"
+            android:lines="3"
+            android:padding="12dp"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="name">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameArea"
+            android:text=""
+            android:singleLine="true">
+
+        </EditText>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="surname">
+
+        </TextView>
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surnameArea"
+            android:singleLine="true"
+            android:text="">
+
+        </EditText>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="birthyear">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/birthDateSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.48">
+
+        </Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/button1"
+            android:text="Gönder"
+            android:layout_height="wrap_content"
+          >
+
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Temizle"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+          >
+
+        </Button>
+        <Button android:id="@+id/button3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="about_app"
+           >
+
+        </Button>
+    </LinearLayout>
+</ScrollView>
+

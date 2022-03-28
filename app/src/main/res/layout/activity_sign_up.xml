@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan3"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gfiil"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+
+            <EditText
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#2D000000"
+                android:id="@+id/username"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/white"
+                android:hint="Kullanıcı Adı"
+                android:background="@drawable/round_button"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/email"
+                android:backgroundTint="#2D000000"
+                android:layout_width="340dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"
+                android:hint="E-mail Adresiniz"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="#2D000000"
+                android:layout_width="340dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"
+                android:hint="Sifreniz"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/cinsiyet"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="#2D000000"
+                android:layout_width="340dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"
+                android:hint="Cinsiyet"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="#2D000000"
+                android:layout_width="340dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"
+                android:hint="Telefon Numaranız"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:gravity="center_horizontal" />
+
+
+
+            <EditText
+                android:id="@+id/referanceno"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="#2D000000"
+                android:layout_width="340dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:hint="Refarans Numaranız (isteğe bağlı)"
+                android:singleLine="true"
+                android:inputType="number"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+
+                >
+
+
+
+
+                <CheckBox
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="18dp"
+                    android:id="@+id/checkbox"
+
+                    android:layout_marginLeft="18dp" />
+
+                <TextView
+                    android:id="@+id/clicktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="00dp"
+                    android:layout_marginTop="29dp"
+                    android:textColor="@color/white"
+                    android:text="Okudum Kabul ediyorum"
+                    android:textSize="20sp" />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="KAYIT OL"
+                android:id="@+id/btnKayit"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zaten üye misiniz ?"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/orange"
+                android:gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="GİRİŞ YAP"
+                android:backgroundTint="@color/orange"
+                android:id="@+id/girisBtn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

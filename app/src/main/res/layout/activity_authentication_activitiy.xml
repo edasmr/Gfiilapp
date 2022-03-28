@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arkaplan"
+        tools:context=".MainActivity">
+
+        <!--text view for heading-->
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Kimlik Bilgilerinizi Doğrulayiniz"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Adınızı Giriniz..."
+        android:textColorHint="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/soyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Soyadınızı Giriniz..."
+        android:textColorHint="@color/white" />
+
+
+
+    <TextView
+        android:id="@+id/dogumyili"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soyad"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Doğum Yılınızı Giriniz(örn:1999)..."
+        android:textColorHint="@color/white" />
+
+    <Spinner
+        android:id="@+id/birthDateSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogumyili"
+        android:layout_weight="0.48">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/tcno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogumyili"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Tc kimlik numaranızı giriniz..."
+        android:textColorHint="@color/white" />
+
+
+    <Button
+        android:id="@+id/idBtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tcno"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Doğrula"
+        android:textAllCaps="false" />
+
+    </RelativeLayout>

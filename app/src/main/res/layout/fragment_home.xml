@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/arkaplan3"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+       android:layout_marginStart="75dp"
+        tools:context=".presentation.home.HomeFragment"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:src="@drawable/notification"
+                android:layout_marginLeft="80dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/search" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="205dp"
+            android:layout_margin="5dp"
+            android:layout_height="55dp"
+            android:textColor="@color/orange"
+            android:text="GFIILAPP"
+            />
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/orange"
+            android:text="MINING"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+</LinearLayout>

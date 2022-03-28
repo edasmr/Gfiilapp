@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan3"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignInActivity"
+    android:weightSum="1" >
+
+    <EditText
+        android:id="@+id/tcknArea"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="@string/tckn_title"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/nameArea"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:hint="@string/name"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:inputType="textCapSentences"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/surnameArea"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="@string/surname"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:text=""
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/yil"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="@string/year"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:maxLength="4"  />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:onClick="controlTCKN"
+        android:textColor="@color/orange"
+        android:text="@string/sorgu" />
+
+    <Button
+        android:id="@+id/devambtn"
+        android:layout_width="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/orange"
+        android:layout_height="50dp"
+        android:text="Devam"/>
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/arkaplan3"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        tools:context=".presentation.home.HomeFragment"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="205dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/orange"
+            android:id="@+id/anaBakiyeAktar"
+            android:text="Ana Bakiyeye Aktar"
+            />
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="55dp"
+            android:id="@+id/cekimTalebiVer"
+            android:layout_margin="5dp"
+            android:textColor="@color/orange"
+            android:text="Çekim Talebi Ver"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puanınızın TL karşılığı : "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="67dp"
+            android:layout_marginLeft="10dp" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:layout_marginTop="10dp"
+     android:layout_marginStart="10dp"
+     android:textStyle="bold"
+     android:textSize="15sp"
+     android:text="item"
+     android:layout_marginLeft="10dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktarım talebiniz hakkında vermek istediğiniz ek bilgileri girebilirsiniz.. "
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="67dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eposta"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            tools:text="para çekmek istiyorum"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:backgroundTint="#2D000000"
+            android:background="@drawable/round_button"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Ana Bakiyeye Aktar "
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödeme Taleplerim / Aktarım Taleplerim"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/grup"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Talep Tarihi"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Talep Tutarı"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="IBAN Numarası"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:text="Talep Durumu"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+       android:layout_margin="10dp"
+        android:layout_height="match_parent" >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </LinearLayout>
