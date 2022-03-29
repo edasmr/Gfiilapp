@@ -19,5 +19,9 @@ data class UserResponse(
     var u_cinsiyet: String,
     @SerializedName("u_bakiye")
     @Expose
-    var u_bakiye: String
+    var u_bakiye: String,
+
+    @SerializedName("ana_bakiye")
+    @Expose
+    var ana_bakiye: String
 )

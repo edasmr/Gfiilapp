@@ -35,6 +35,7 @@ class ProfilFragment : Fragment(){
         val telno: EditText = view.findViewById(R.id.telno)
         val cinsiyet: TextView = view.findViewById(R.id.cinsiyet)
         val bakiye: TextView = view.findViewById(R.id.bakiye)
+        val anaBakiye: TextView = view.findViewById(R.id.anaBakiye)
         val ödemeTalebi: Button = view.findViewById(R.id.ödemeTalebi)
         val guncelle: Button = view.findViewById(R.id.guncelle)
         //shared preferences veri alma kodu copy paste
@@ -59,6 +60,7 @@ class ProfilFragment : Fragment(){
                         telno.setText(response.body()?.u_telefon_no)
                         cinsiyet.text = response.body()?.u_cinsiyet
                         bakiye.text = response.body()?.u_bakiye
+                        anaBakiye.text = response.body()?.ana_bakiye
 
                     } else {
                         Log.d("12345", "basarızzz giris")

@@ -28,9 +28,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="15dp"
-                    android:text="Görev Tarihi:"
+                    android:text="25/03/2022"
                     android:textColor="@color/orange"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -39,9 +39,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="16dp"
-                    android:text="Item"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:text="13"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -49,9 +49,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Görev Kazancı :"
+                    android:text="38523772723457"
                     android:textColor="@color/orange"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp" />
 
@@ -60,9 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Görev Kazancı :"
+                android:text="Reddedildi ve Puan İade Edildi"
                 android:textColor="@color/orange"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp" />
 

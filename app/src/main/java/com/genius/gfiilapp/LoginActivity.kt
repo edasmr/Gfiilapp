@@ -23,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
        val username:EditText =findViewById(R.id.username)
        val password:EditText =findViewById(R.id.password)
        val loginButon:Button =findViewById(R.id.loginbuton)
+       val uyeolBtn:Button =findViewById(R.id.uyeOlBtn)
 
 
         loginButon.setOnClickListener {
@@ -71,6 +72,14 @@ class LoginActivity : AppCompatActivity() {
                 }
 
             })
+
+        }
+
+        uyeolBtn.setOnClickListener {
+
+            val intent = Intent(this@LoginActivity,SignInActivity::class.java)
+
+            startActivity(intent)
 
         }
 

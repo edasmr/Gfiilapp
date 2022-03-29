@@ -67,6 +67,28 @@
         android:padding="6dp"
         android:text="Giriş" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Henüz üye değilseniz lütfen üye olunuz."
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/uyeOlBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:padding="6dp"
+        android:text="ÜYE OL " />
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
