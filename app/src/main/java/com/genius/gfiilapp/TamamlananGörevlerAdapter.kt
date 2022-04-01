@@ -36,7 +36,6 @@ class TamamlananGörevlerAdapter (private val context: Context, private val mLis
             holder.görevDurumu.text="Onay Bekliyor"
 
 
-        //Sen bi harikasın iğrennc duruyı
 
     }
 

@@ -22,6 +22,10 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var phonenumber:EditText
     private lateinit var username:EditText
     private lateinit var checkbox:CheckBox
+    var items = arrayOf("Kadın", "Erkek")
+    private lateinit var autoCompleteTxt: AutoCompleteTextView
+    var adapterItems: ArrayAdapter<String>? = null
+
 
     protected override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +35,7 @@ class SignUpActivity : AppCompatActivity() {
         checkbox = findViewById(R.id.checkbox)
         val email:EditText =findViewById(R.id.email)
         val password:EditText =findViewById(R.id.password)
-        val cinsiyet:EditText = findViewById(R.id.cinsiyet)
+      // val cinsiyet:EditText = findViewById(R.id.cinsiyet)
          phonenumber=findViewById(R.id.phonenumber)
         val referanceno:EditText =findViewById(R.id.referanceno)
         val btnKayit:Button =findViewById(R.id.btnKayit)
@@ -41,6 +45,14 @@ class SignUpActivity : AppCompatActivity() {
         val ad = intent.getStringExtra("ad").orEmpty()
         val soyad = intent.getStringExtra("soyad").orEmpty()
         val dyili = intent.getStringExtra("dyili").orEmpty()
+
+        autoCompleteTxt = findViewById(R.id.auto_complete_txt)
+        adapterItems = ArrayAdapter(this, R.layout.list_item, items)
+        autoCompleteTxt.setAdapter(adapterItems)
+        autoCompleteTxt.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
+            val item = parent.getItemAtPosition(position).toString()
+          //  Toast.makeText(applicationContext, "Item: $item", Toast.LENGTH_SHORT).show()
+        })
 
 
         clicktex.setOnClickListener(View.OnClickListener {
@@ -72,7 +84,8 @@ class SignUpActivity : AppCompatActivity() {
                     username.text.toString(),
                     email.text.toString(),
                     password.text.toString(),
-                    cinsiyet.text.toString(),
+                   autoCompleteTxt.toString(),
+                  // cinsiyet.text.toString(),
                     phonenumber.text.toString(),
                     referanceno.text.toString(),
                     tc,

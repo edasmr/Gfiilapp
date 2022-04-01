@@ -9,13 +9,14 @@
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/drawable/ic_setting.xml" value="0.186" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/drawable/round_button.xml" value="0.2415" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_authentication_activitiy.xml" value="0.11678832116788321" />
+        <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_cekim_main.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_deneme_activitiy.xml" value="0.18986486486486487" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_first_page.xml" value="0.18986486486486487" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_login.xml" value="0.16" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_odeme.xml" value="0.2" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_sign_in.xml" value="0.23783783783783785" />
-        <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
+        <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/activity_sms_dogrulama.xml" value="0.1527027027027027" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/alert_dialog_sozlesme.xml" value="0.1732283464566929" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/coin_cardview.xml" value="0.22" />
@@ -27,6 +28,7 @@
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/fragment_task.xml" value="0.25" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/gorevler_item.xml" value="0.18986486486486487" />
+        <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/list_item.xml" value="0.1328551912568306" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/mining_layout.xml" value="0.11678832116788321" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/odeme_cardview.xml" value="0.20168918918918918" />
         <entry key="..\:/Users/ROG STRIX/Downloads/Gfiilapp 2/app/src/main/res/layout/paket_item.xml" value="0.36666666666666664" />

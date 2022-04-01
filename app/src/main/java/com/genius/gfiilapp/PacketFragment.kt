@@ -38,7 +38,6 @@ class PacketFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerview=view.findViewById(R.id.recyclerview2)
-
         recyclerview.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL ,false)
 
 

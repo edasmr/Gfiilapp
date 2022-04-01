@@ -1,6 +1,7 @@
 package com.genius.gfiilapp
 
 import android.app.Dialog
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -20,6 +21,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class
@@ -49,36 +52,29 @@ HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerview=view.findViewById(R.id.recyclerview)
 
-
+        val prefences =
+            requireActivity().getSharedPreferences("com.genius.gfiilapp", Context.MODE_PRIVATE)
+        val uKadi = prefences.getString("u_kadi", "DEFAULT_VALUE").orEmpty()
+        println(uKadi)
 
         listener = object : IPaketler{
             override fun buttonClick(position: Int) {
 
-                val file: File = File("a.jpg")
-                val requestFile: RequestBody = RequestBody.create(
-                    MediaType.parse("application/octet-stream"),
-                    file
-                )
-
-                // MultipartBody.Part is used to send also the actual file name
-
-                // MultipartBody.Part is used to send also the actual file name
-                val body = MultipartBody.Part.createFormData("a.jpg", "a.jpg", requestFile)
-
+                val kanit:String = "966a9fe2-8a04-48b8-aa2d-5c80041b87c1"
                 // add another part within the multipart request
 
                 // add another part within the multipart request
 
-
-                ApiUtils.usersDAOInterface().gorevTamamla(list.get(position).id, list.get(position).url, true, body).enqueue(object :
-                    Callback<String> {
+                Log.i("asdasda", list.get(position).url)
+                 ApiUtils.usersDAOInterface().gorevTamamla(uKadi, list.get(position).id, list.get(position).url, true, kanit).enqueue(object :
+                    Callback<CRUDResponse> {
                     override fun onResponse(
-                        call: Call<String>,
-                        response: Response<String>
+                        call: Call<CRUDResponse>,
+                        response: Response<CRUDResponse>
                     ) {
 
                         var gorevUrl:String = ""
-                        response.body()?.let { gorevUrl = it; }
+                        gorevUrl = list.get(position).url
 
                         Log.d("minnos_eda", gorevUrl)
 
@@ -101,10 +97,11 @@ HomeFragment : Fragment() {
                         myWebView.settings.allowContentAccess=true
                         myWebView.settings.domStorageEnabled=true
                         myWebView.settings.useWideViewPort=true
+                        myWebView.settings.javaScriptEnabled = true
                         myWebView.settings.setAppCacheEnabled(true)
                     }
 
-                    override fun onFailure(call: Call<String>, t: Throwable) {
+                    override fun onFailure(call: Call<CRUDResponse>, t: Throwable) {
                         Log.d("minnos_eda", "hata")
 
                     }

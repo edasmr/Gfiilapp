@@ -71,15 +71,15 @@ interface UsersDAOInterface {
     fun getPaketler(): Call<List<Paketler>>
 
 
-    @Multipart
-    @POST("/inc/islem.php")
-     @FormUrlEncoded
+    @POST("/mobileServices/gorevTamamla.php")
+    @FormUrlEncoded
     fun gorevTamamla(
+        @Field("u_kadi") u_kadi: String,
         @Field("gl_g_id") gl_g_id: Int,
         @Field("g_button_url") g_button_url: String,
         @Field("grv_tamamla") grv_tamamla: Boolean,
-        @Part("gl_kanit") gl_kanit: MultipartBody.Part
-    ): Call<String>
+        @Field("gl_kanit") gl_kanit:String
+    ): Call<CRUDResponse>
 
     @POST("/mobileServices/bilgiKaydet.php")
     fun saveProfile(
@@ -92,6 +92,31 @@ interface UsersDAOInterface {
 
         @Field("u_kadi") u_kadi: String,
     ):  Call<List<TamamlananGörevler>>
+
+    @POST("/mobileServices/tamamlananOdemeler.php")
+    @FormUrlEncoded
+    fun tamamlananOdemeler(
+
+        @Field("u_kadi") u_kadi: String,
+    ):  Call<List<TamamlananOdemeler>>
+
+
+    @POST("/mobileServices/cekimTalebiVer.php")
+    fun cekimTalebiVer(
+        @Body param:RequestBody
+    ): Call<CRUDResponse>
+
+    @FormUrlEncoded
+    @POST("/mobileServices/anaBakiyeAktar.php")
+    fun anaBakiyeAktar(
+        @Field("u_kadi") u_kadi: String,
+        @Field("ct_bakiye") ct_bakiye: String,
+        @Field("ct_iban") ct_iban: String
+
+    ): Call<CRUDResponse>
+
+
+
 
 
 

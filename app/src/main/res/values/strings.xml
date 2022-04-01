@@ -10,6 +10,7 @@
     <string name="result_connection_error">İnternet bağlantınız kesilmiş ya da TCKN Servisi devre dışı kalmış olabilir.</string>
     <string name="result_unknown_error">Beklenmedik bir hata oluştu. Hata kodu:</string>
 
+        <string name="select">Select Item</string>
 
     <string name="tckn_title">TC Kimlik No (11 Karakter)</string>
 

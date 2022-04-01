@@ -19,6 +19,9 @@
         android:theme="@style/Theme.Gfiilapp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CekimMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".OdemeActivity"
             android:exported="false" />
         <activity
