@@ -77,7 +77,7 @@ interface UsersDAOInterface {
         @Field("u_kadi") u_kadi: String,
         @Field("gl_g_id") gl_g_id: Int,
         @Field("g_button_url") g_button_url: String,
-        @Field("grv_tamamla") grv_tamamla: Boolean,
+        @Field("grv_tamamla") grv_tamamla: Int,
         @Field("gl_kanit") gl_kanit:String
     ): Call<CRUDResponse>
 
@@ -113,6 +113,13 @@ interface UsersDAOInterface {
         @Field("ct_bakiye") ct_bakiye: String,
         @Field("ct_iban") ct_iban: String
 
+    ): Call<CRUDResponse>
+
+    @POST("/mobileServices/gunlukKazanc.php")
+    @FormUrlEncoded
+    fun gunclukKazanc(
+
+        @Field("u_kadi") uKadi: String
     ): Call<CRUDResponse>
 
 

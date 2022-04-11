@@ -22,4 +22,20 @@ class FirstPageActivity : AppCompatActivity() {
 
 
     }
+
+//    fun run(){
+//        val prefences = getSharedPreferences("com.genius.gfiilapp", Context.MODE_PRIVATE)
+//        val hasLoggedIn:Boolean = prefences.getBoolean("hasLoggedIn", false)
+//        if(hasLoggedIn){
+//            val intent = Intent(this@FirstPageActivity,MainActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//
+//        }
+//        else{
+//            val intent = Intent(this@FirstPageActivity,LoginActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
+//    }
 }

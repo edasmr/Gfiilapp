@@ -1,17 +1,20 @@
 package com.genius.gfiilapp
 
+import android.accounts.AccountManager.KEY_PASSWORD
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
+import android.provider.SyncStateContract
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -51,10 +54,12 @@ class LoginActivity : AppCompatActivity() {
 
                         bundle.putString("birinci",username.text.toString())
                         //sharedPreference burda key tutcan key,değeri sisteme bi tane integer yada string kullanıcı adınıı tutcaz bunun ıcın veritabanı acmaya gerek yok tek degerlık vreıtabanı gıbı dusun 3 4 satır kodu var.  key , username.text.toString() kullanıcı adını veritabanını gondermıs oluyoruz .
-
                         val intent = Intent(this@LoginActivity,MainActivity::class.java)
 
                         startActivity(intent)
+
+
+
 
                     }
                     else{
@@ -85,5 +90,5 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    //fun calistir(view)
+
 }

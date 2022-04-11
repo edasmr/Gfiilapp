@@ -226,6 +226,37 @@
 
 
 
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="20dp"
+             android:text="Bugün Kazandığınız:"
+             android:textSize="17dp"
+             android:textColor="@color/orange"
+             tools:ignore="MissingConstraints"
+             tools:layout_editor_absoluteX="25dp"
+             tools:layout_editor_absoluteY="112dp" />
+
+         <TextView
+             android:layout_width="340dp"
+             android:layout_height="40dp"
+             tools:text="0"
+             android:layout_marginTop="0dp"
+             android:id="@+id/bugunKazanc"
+             android:layout_marginLeft="20dp"
+             android:background="@drawable/round_button"
+             android:textSize="18dp"
+             android:gravity="center_vertical"
+             android:backgroundTint="#2D000000"
+             android:textAlignment="center"
+             android:textColor="@color/white"
+             tools:ignore="MissingConstraints,RtlCompat"
+             tools:layout_editor_absoluteX="25dp"
+             tools:layout_editor_absoluteY="112dp"
+             />
+
+
+
          <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

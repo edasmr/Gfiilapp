@@ -34,16 +34,11 @@
 
             <ImageView
                 android:layout_width="25dp"
+                android:id="@+id/whatsapp"
                 android:layout_height="50dp"
-                android:layout_marginStart="80dp"
-                android:src="@drawable/notification"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/wpicon"
                 android:layout_marginLeft="80dp" />
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="50dp"
-                android:src="@drawable/search" />
-
 
         </LinearLayout>
 

@@ -36,6 +36,7 @@ class ProfilFragment : Fragment(){
         val cinsiyet: TextView = view.findViewById(R.id.cinsiyet)
         val bakiye: TextView = view.findViewById(R.id.bakiye)
         val anaBakiye: TextView = view.findViewById(R.id.anaBakiye)
+        val bugunKazanc: TextView = view.findViewById(R.id.bugunKazanc)
         val ödemeTalebi: Button = view.findViewById(R.id.ödemeTalebi)
         val guncelle: Button = view.findViewById(R.id.guncelle)
         //shared preferences veri alma kodu copy paste
@@ -103,6 +104,29 @@ class ProfilFragment : Fragment(){
             val intent = Intent (getActivity(), OdemeActivity::class.java)
             getActivity()?.startActivity(intent)
         }
+
+        ApiUtils.usersDAOInterface().gunclukKazanc(uKadi) .enqueue(object : // gonderecegımız seylerı yaz
+            Callback<CRUDResponse> {
+            override fun onResponse(
+                call: Call<CRUDResponse>,
+                response: Response<CRUDResponse>
+            ) {
+
+                if (response.body()?.status.equals("ok")) {
+
+                    bugunKazanc.text = response.body()?.response+" TL"
+
+                } else {
+                    Log.d("12345", "asddbasarızzz giris")
+
+                }
+            }
+
+            override fun onFailure(call: Call<CRUDResponse>, t: Throwable) {
+                println(t.localizedMessage.toString())
+            }
+
+        })
 
     }
 

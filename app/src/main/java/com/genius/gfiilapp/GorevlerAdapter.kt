@@ -2,6 +2,7 @@ package com.genius.gfiilapp
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -33,6 +34,8 @@ class GorevlerAdapter(private val context:Context, private val mList: ArrayList<
 
         holder.cardView.setOnClickListener {
             listener.buttonClick(position)
+            holder.cardView.visibility =GONE
+
         }
 
 

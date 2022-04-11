@@ -2,6 +2,9 @@ package com.genius.gfiilapp
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,20 +12,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Button
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import okhttp3.MediaType
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
+import com.google.android.material.button.MaterialButton
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.File
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class
@@ -30,7 +30,10 @@ HomeFragment : Fragment() {
      private lateinit var recyclerview:RecyclerView
     private lateinit var listener:IPaketler
     private lateinit var  cardView: CardView
+    private lateinit var cancelButon:ImageView
     private var list = ArrayList<Gorevler>()
+
+    private lateinit var whatsapp:ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -50,6 +53,24 @@ HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        whatsapp =view.findViewById(R.id.whatsapp)
+       val num:String="+905322045809"
+        val msg:String ="Merhabalar,gfiilapp uygulamasında bir konu hakkında desteğinize ihtiyacım var:"
+        whatsapp.setOnClickListener {
+          //  val wpurl = "https://com.whatsapp/+905334070316?text=Hi,Is any one Avaliable?"
+         //   val intent = Intent(Intent.ACTION_VIEW)
+//       //     intent.setData(Uri.parse(wpurl))
+          //  startActivity(intent)
+            val installed = isAppInstalled("com.whatsapp")
+            if (installed) {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.setData(  Uri.parse("http://api.whatsapp.com/send?phone=" + num.toString() + "&text=" + msg))
+                startActivity(intent)
+            } else {
+                Toast.makeText(context, "Whatsapp is not installed!", Toast.LENGTH_SHORT)
+                    .show()
+            }
+        }
         recyclerview=view.findViewById(R.id.recyclerview)
 
         val prefences =
@@ -59,14 +80,13 @@ HomeFragment : Fragment() {
 
         listener = object : IPaketler{
             override fun buttonClick(position: Int) {
-
                 val kanit:String = "966a9fe2-8a04-48b8-aa2d-5c80041b87c1"
                 // add another part within the multipart request
 
                 // add another part within the multipart request
 
                 Log.i("asdasda", list.get(position).url)
-                 ApiUtils.usersDAOInterface().gorevTamamla(uKadi, list.get(position).id, list.get(position).url, true, kanit).enqueue(object :
+                 ApiUtils.usersDAOInterface().gorevTamamla(uKadi, list.get(position).id, list.get(position).url, 0, kanit).enqueue(object :
                     Callback<CRUDResponse> {
                     override fun onResponse(
                         call: Call<CRUDResponse>,
@@ -81,6 +101,10 @@ HomeFragment : Fragment() {
                         val dialog = Dialog(requireActivity(), android.R.style.Theme_Light_NoTitleBar_Fullscreen)
                         dialog.setContentView(R.layout.vebview_layout)
                         dialog.show()
+                        cancelButon = dialog.findViewById(R.id.cancelBtn)
+                        cancelButon.setOnClickListener {
+                            dialog.dismiss()
+                        }
 
 
                         val myWebView: WebView = dialog.findViewById(R.id.webView)
@@ -119,7 +143,9 @@ HomeFragment : Fragment() {
                 call: Call<List<Gorevler>>,
                 response: Response<List<Gorevler>>
             ) {
-                response.body()?.let { list.addAll(it) }
+                response.body()?.let {
+                    list = ArrayList<Gorevler>()
+                    list.addAll(it) }
                 recyclerview.layoutManager = LinearLayoutManager(context)
 
                 val adapter = context?.let { GorevlerAdapter(it,list,listener) } // veri geldikten sonra adapteri set edicez
@@ -137,4 +163,20 @@ HomeFragment : Fragment() {
 
         super.onViewCreated(view, savedInstanceState)
     }
+
+
+    private fun isAppInstalled(s: String): Boolean {
+        var packageManager: PackageManager = requireActivity().getPackageManager()
+        var is_installed: Boolean
+        try {
+            packageManager.getPackageInfo(s, PackageManager.GET_ACTIVITIES)
+            is_installed = true
+        } catch (e: PackageManager.NameNotFoundException) {
+            is_installed = false
+            e.printStackTrace()
+        }
+        return is_installed
+    }
+
+
 }
