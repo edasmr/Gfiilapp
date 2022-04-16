@@ -75,72 +75,82 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         btnKayit.setOnClickListener {
-            if(!checkbox.isChecked){
-                Toast.makeText(this, "Lütfen sözleşmeyi kabul edin."
-                    ,Toast.LENGTH_SHORT).show()
+            if (username.text.isEmpty() || password.text.isEmpty()) {
+                Toast.makeText(
+                    this@SignUpActivity,
+                    "Lütfen kullanıcı adı ve şifreyi boş bırakmayınız.",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
 
-                ApiUtils.usersDAOInterface().kayitOl(
-                    username.text.toString(),
-                    email.text.toString(),
-                    password.text.toString(),
-                   autoCompleteTxt.toString(),
-                  // cinsiyet.text.toString(),
-                    phonenumber.text.toString(),
-                    referanceno.text.toString(),
-                    tc,
-                    ad,
-                    soyad,
-                    dyili
-                ).enqueue(object :
-                    Callback<CRUDResponse> {
-                    override fun onResponse(
-                        call: Call<CRUDResponse>,
-                        response: Response<CRUDResponse>
 
-                    ) {
-                        println(response.body()?.status)
-                        if (response.body()?.status == "ok") {
-                            Toast.makeText(
-                                this@SignUpActivity,
-                                "BAŞARILI GİRİŞ",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                if (!checkbox.isChecked) {
+                    Toast.makeText(
+                        this, "Lütfen sözleşmeyi kabul edin.", Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+
+                    ApiUtils.usersDAOInterface().kayitOl(
+                        username.text.toString(),
+                        email.text.toString(),
+                        password.text.toString(),
+                        autoCompleteTxt.toString(),
+                        // cinsiyet.text.toString(),
+                        phonenumber.text.toString(),
+                        referanceno.text.toString(),
+                        tc,
+                        ad,
+                        soyad,
+                        dyili
+                    ).enqueue(object :
+                        Callback<CRUDResponse> {
+                        override fun onResponse(
+                            call: Call<CRUDResponse>,
+                            response: Response<CRUDResponse>
+
+                        ) {
+                            println(response.body()?.status)
+                            if (response.body()?.status == "ok") {
+                                Toast.makeText(
+                                    this@SignUpActivity,
+                                    "BAŞARILI GİRİŞ",
+                                    Toast.LENGTH_SHORT
+                                ).show()
 
 
-                            val intent =
-                                Intent(this@SignUpActivity, SmsDogrulamaActivity::class.java)
-                            intent.putExtra("telno", phonenumber.text.toString())
-                            intent.putExtra("kadi", username.text.toString())
-                            startActivity(intent)
+                                val intent =
+                                    Intent(this@SignUpActivity, SmsDogrulamaActivity::class.java)
+                                intent.putExtra("telno", phonenumber.text.toString())
+                                intent.putExtra("kadi", username.text.toString())
+                                startActivity(intent)
 
+                            }
+                            if (response.body()?.status == "exist") {
+                                Toast.makeText(
+                                    this@SignUpActivity,
+                                    "BÖYLE BİRİ VAR ",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                            if (response.body()?.status == "error") {
+                                Toast.makeText(
+                                    this@SignUpActivity,
+                                    "BAŞARISIZ GİRİŞ",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+
+                            }
                         }
-                        if (response.body()?.status == "exist") {
-                            Toast.makeText(
-                                this@SignUpActivity,
-                                "BÖYLE BİRİ VAR ",
-                                Toast.LENGTH_SHORT
-                            ).show()
+
+                        override fun onFailure(call: Call<CRUDResponse>, t: Throwable) {
+                            println(t.localizedMessage.toString())
                         }
-                        if (response.body()?.status == "error") {
-                            Toast.makeText(
-                                this@SignUpActivity,
-                                "BAŞARISIZ GİRİŞ",
-                                Toast.LENGTH_SHORT
-                            ).show()
 
-                        }
-                    }
-
-                    override fun onFailure(call: Call<CRUDResponse>, t: Throwable) {
-                        println(t.localizedMessage.toString())
-                    }
-
-                })
+                    })
+                }
             }
+
         }
-
-
     }
 
 }

@@ -102,6 +102,7 @@
                 android:gravity="center_vertical"
                 android:textAlignment="center"
                 android:textColor="@color/white"
+                android:inputType="number"
                 tools:ignore="MissingConstraints,RtlCompat"
                 tools:layout_editor_absoluteX="25dp"
                 tools:layout_editor_absoluteY="112dp"
